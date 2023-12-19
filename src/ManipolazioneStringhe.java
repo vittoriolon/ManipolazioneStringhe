@@ -21,11 +21,17 @@ public class ManipolazioneStringhe {
     public static char primocarattere (String stringa1){
     String s1;
     char primocar;
-    int a;
     s1 = stringa1;
     primocar =  s1.charAt(0);
     return primocar;
     }   
+
+    public static String ultimidue (String stringa1){
+    String s1,ult;
+    s1 = stringa1;
+    ult = s1.substring(2);
+    return ult;
+    }
 
 
 
@@ -36,9 +42,11 @@ public class ManipolazioneStringhe {
         String maiuscolo = maiuscolo(stringa);
         String minuscolo = minuscolo(stringa);
         char primocarattere = primocarattere(stringa);
+        String ultimidue = ultimidue(stringa);
         System.out.println("Stringa maiuscola\n" +maiuscolo);
         System.out.println("Stringa minuscola\n" +minuscolo);
         System.out.println("Primo carattere\n" +primocarattere);
+        System.out.println("Ultimi due caratteri\n" +ultimidue);
         scanner.close();
     }
 }
